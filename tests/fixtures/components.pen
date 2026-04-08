@@ -1,0 +1,68 @@
+{
+    "version": "1",
+    "children": [
+        {
+            "id": "btn-component",
+            "type": "frame",
+            "name": "Button",
+            "reusable": true,
+            "x": 0,
+            "y": 0,
+            "width": 120,
+            "height": 40,
+            "layout": "horizontal",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "borderRadius": 8,
+            "fills": [
+                {
+                    "type": "color",
+                    "color": "$primary"
+                }
+            ],
+            "children": [
+                {
+                    "id": "btn-label",
+                    "type": "text",
+                    "name": "Label",
+                    "x": 0,
+                    "y": 0,
+                    "content": "Click me",
+                    "fontSize": 14,
+                    "fontWeight": 500,
+                    "fills": [
+                        {
+                            "type": "color",
+                            "color": "#FFFFFF"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "btn-instance-1",
+            "type": "ref",
+            "ref": "btn-component",
+            "x": 100,
+            "y": 200,
+            "descendants": {
+                "btn-label": {
+                    "content": "Submit"
+                }
+            }
+        },
+        {
+            "id": "btn-instance-2",
+            "type": "ref",
+            "ref": "btn-component",
+            "x": 250,
+            "y": 200
+        }
+    ],
+    "variables": {
+        "primary": {
+            "type": "color",
+            "value": "#3B82F6"
+        }
+    }
+}

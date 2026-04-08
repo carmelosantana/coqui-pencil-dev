@@ -1,0 +1,102 @@
+{
+    "version": "1",
+    "children": [
+        {
+            "id": "frame-1",
+            "type": "frame",
+            "name": "Main Frame",
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 900,
+            "layout": "vertical",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "gap": 24,
+            "padding": [40, 40, 40, 40],
+            "fills": [
+                {
+                    "type": "color",
+                    "color": "#FFFFFF"
+                }
+            ],
+            "children": [
+                {
+                    "id": "header-text",
+                    "type": "text",
+                    "name": "Header",
+                    "x": 0,
+                    "y": 0,
+                    "content": "Welcome to Pencil",
+                    "fontSize": 48,
+                    "fontFamily": "Inter",
+                    "fontWeight": 700,
+                    "textAlign": "center",
+                    "fills": [
+                        {
+                            "type": "color",
+                            "color": "$textColor"
+                        }
+                    ]
+                },
+                {
+                    "id": "hero-rect",
+                    "type": "rectangle",
+                    "name": "Hero Card",
+                    "x": 0,
+                    "y": 0,
+                    "width": 600,
+                    "height": 300,
+                    "borderRadius": 16,
+                    "fills": [
+                        {
+                            "type": "color",
+                            "color": "$primary"
+                        }
+                    ],
+                    "strokes": [
+                        {
+                            "color": "#E5E7EB",
+                            "width": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "circle-1",
+                    "type": "ellipse",
+                    "name": "Avatar",
+                    "x": 0,
+                    "y": 0,
+                    "width": 64,
+                    "height": 64,
+                    "fills": [
+                        {
+                            "type": "color",
+                            "color": "#6366F1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "variables": {
+        "primary": {
+            "type": "color",
+            "value": "#3B82F6"
+        },
+        "textColor": {
+            "type": "color",
+            "value": "#111827"
+        },
+        "spacing": {
+            "type": "number",
+            "value": 16
+        }
+    },
+    "themes": {
+        "mode": {
+            "Light": true,
+            "Dark": false
+        }
+    }
+}
